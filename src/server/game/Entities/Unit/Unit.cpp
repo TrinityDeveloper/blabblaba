@@ -5665,6 +5665,20 @@ bool Unit::HandleDummyAuraProc(Unit* victim, uint32 damage, AuraEffect* triggere
                     target = this;
                     break;
                 }
+			}
+			
+			// Retaliation
+            if (dummySpell->SpellFamilyFlags[1] & 0x8)
+            {
+                // check attack comes not from behind
+                if (!HasInArc(M_PI, victim))
+                    return false;
+
+                if (HasUnitState(UNIT_STATE_STUNNED))
+                     return false;
+
+                triggered_spell_id = 22858;
+                break;			
             }
             // Second Wind
             if (dummySpell->SpellIconID == 1697)
