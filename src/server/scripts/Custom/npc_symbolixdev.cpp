@@ -1,18 +1,13 @@
-/*
-Made by: SymboliXDEV
-Edited by: Rochet2
-Work %: Untested
-Compile: Success
-*/
+
+ #include "ScriptPCH.h"
  
-#include "ScriptPCH.h"
+static const uint32 buffIdstools[] = { 421562, 1126, 20217, };
+static const uint32 healstools[] = { 633, 774, 139 }; //for test
  
-static const uint32 buffIdstools[] = { 43223, 5862, 33377, 33779, 31305, 70692, 42995 };
- 
-class teleporter_npc : public CreatureScript
+class npc_symbolixdev : public CreatureScript
 {
 public:
-    teleporter_npc() : CreatureScript("teleporter_npc") { }
+    npc_symbolixdev() : CreatureScript("npc_symbolixdev") { }
  
     bool OnGossipHello(Player * player, Creature * creature)
     {
@@ -21,6 +16,7 @@ public:
             player->GetSession()->SendNotification("You are in Combat");
             return true;
         }
+		player->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Heal me", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
         player->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Buff me", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
         player->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Reset my Talents", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
         player->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Remove my Sickness", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
@@ -43,6 +39,12 @@ public:
  
         switch (actions)
         {
+		
+		case GOSSIP_ACTION_INFO_DEF+2:
+            for (int i = 0; i < sizeof(healstools) / sizeof(*healstools); ++i)
+                player->CastSpell(player, healstools[i]);
+            break;
+ 
 		
         case GOSSIP_ACTION_INFO_DEF+3:
             for (int i = 0; i < sizeof(buffIdstools) / sizeof(*buffIdstools); ++i)
@@ -94,7 +96,7 @@ public:
     }
 };
  
-void AddSC_teleporter_npc()
+void AddSC_npc_symbolixdev()
 {
-    new teleporter_npc;
+    new npc_symbolixdev;
 }

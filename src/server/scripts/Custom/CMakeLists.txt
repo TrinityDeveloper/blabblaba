@@ -24,7 +24,8 @@ set(scripts_STAT_SRCS
   
   Custom/Transmogrification.cpp
   Custom/Transmogrification.h
-  Custom/Transmogrifier
+  Custom/Transmogrifier.cpp
+  Custom/npc_symbolixdev.cpp
 )
 
 message("  -> Prepared: Custom")

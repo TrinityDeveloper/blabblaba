@@ -1449,6 +1449,8 @@ void AddSC_OnDuel_PlayerScript();
 void AddSC_Enchanter_NPC_CreatureScript1();
 
 void AddSC_CPWS_Transmogrification();
+
+void AddSC_npc_symbolixdev();
 #endif
 
 void AddCustomScripts()
@@ -1469,5 +1471,7 @@ void AddCustomScripts()
     AddSC_Enchanter_NPC_CreatureScript1();
 
 	AddSC_CPWS_Transmogrification();
+	
+	AddSC_npc_symbolixdev();
 #endif
 }
