@@ -13,6 +13,7 @@ set(scripts_STAT_SRCS
   Custom/PlayerScript/OnLogin_PlayerScript.cpp
   Custom/PlayerScript/OnSave_PlayerScript.cpp
   Custom/PlayerScript/OnDuel_PlayerScript.cpp
+  Custom/PlayerScript/OnKill_PlayerScript.cpp
   
   Custom/WorldScript/OnUpdate_WorldScript.cpp
   
@@ -26,6 +27,7 @@ set(scripts_STAT_SRCS
   Custom/Transmogrification.h
   Custom/Transmogrifier.cpp
   Custom/npc_symbolixdev.cpp
+  Custom/multi.cpp
 )
 
 message("  -> Prepared: Custom")

@@ -1,7 +1,7 @@
 
- #include "ScriptPCH.h"
+#include "ScriptPCH.h"
  
-static const uint32 buffIdstools[] = { 421562, 1126, 20217, };
+static const uint32 buffIdstools[] = { 43223, 36880, 48170, 48074, 48162, 48469 };
 static const uint32 healstools[] = { 633, 774, 139 }; //for test
  
 class npc_symbolixdev : public CreatureScript
