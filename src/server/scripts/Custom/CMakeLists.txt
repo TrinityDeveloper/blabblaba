@@ -21,6 +21,10 @@ set(scripts_STAT_SRCS
   Custom/CreatureScript/Enchanter_NPC_CreatureScript.cpp
   Custom/CreatureScript/Enchanter_NPC_CreatureScript1.cpp
   Custom/CreatureScript/Professions_NPC_CreatureScript.cpp
+  
+  Custom/Transmogrification.cpp
+  Custom/Transmogrification.h
+  Custom/Transmogrifier
 )
 
 message("  -> Prepared: Custom")
