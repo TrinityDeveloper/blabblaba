@@ -1450,6 +1450,7 @@ void AddSC_Professions_NPC_CreatureScript();
 void AddSC_Enchanter_NPC_CreatureScript1();
 
 void AddSC_CPWS_Transmogrification();
+void AddSC_npc_changer();
 //void AddSC_npc_symbolixdev();
 //void AddSC_starter_gear();
 #endif
@@ -1473,6 +1474,7 @@ void AddCustomScripts()
     AddSC_Enchanter_NPC_CreatureScript1();
 
 	AddSC_CPWS_Transmogrification();
+	AddSC_npc_changer();
 //	AddSC_npc_symbolixdev();
 //	AddSC_starter_gear();
 #endif

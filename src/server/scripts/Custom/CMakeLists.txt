@@ -29,6 +29,7 @@ set(scripts_STAT_SRCS
   Custom/Transmogrifier.cpp
   Custom/npc_symbolixdev.cpp
   Custom/multi.cpp
+  Custom/Change.cpp
 )
 
 message("  -> Prepared: Custom")
