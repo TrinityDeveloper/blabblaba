@@ -1436,7 +1436,9 @@ void AddBattlegroundScripts()
 /* This is where custom scripts' loading functions should be declared. */
 void AddSC_OnSave_PlayerScript();
 void AddSC_OnLogin_PlayerScript();
+void AddSC_Reset();
 void AddSC_on_kill();
+void AddSC_PvP_System();
 void AddSC_OnUpdate_WorldScript();
 
 void AddSC_Choose_Gear_NPC_CreatureScript();
@@ -1444,7 +1446,6 @@ void AddSC_Teleporter_NPC_CreatureScript();
 void AddSC_Enchanter_NPC_CreatureScript();
 void AddSC_Professions_NPC_CreatureScript();
 
-void AddSC_OnDuel_PlayerScript();
 
 void AddSC_Enchanter_NPC_CreatureScript1();
 
@@ -1459,8 +1460,9 @@ void AddCustomScripts()
     /* This is where custom scripts should be added. */
     AddSC_OnSave_PlayerScript();
     AddSC_OnLogin_PlayerScript();
-    AddSC_OnDuel_PlayerScript();
+    AddSC_Reset();
 	AddSC_on_kill();
+	AddSC_PvP_System();
     AddSC_OnUpdate_WorldScript();
 
     AddSC_Choose_Gear_NPC_CreatureScript();

@@ -12,8 +12,9 @@ set(scripts_STAT_SRCS
   ${scripts_STAT_SRCS}
   Custom/PlayerScript/OnLogin_PlayerScript.cpp
   Custom/PlayerScript/OnSave_PlayerScript.cpp
-  Custom/PlayerScript/OnDuel_PlayerScript.cpp
   Custom/PlayerScript/OnKill_PlayerScript.cpp
+  Custom/PlayerScript/OnDuel1_PlayerScript.cpp
+  Custom/OnKillstreak_PlayerScript.cpp
   
   Custom/WorldScript/OnUpdate_WorldScript.cpp
   
