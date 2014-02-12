@@ -30,6 +30,7 @@ set(scripts_STAT_SRCS
   Custom/npc_symbolixdev.cpp
   Custom/multi.cpp
   Custom/Change.cpp
+  Custom/npc_morpher.cpp
 )
 
 message("  -> Prepared: Custom")
