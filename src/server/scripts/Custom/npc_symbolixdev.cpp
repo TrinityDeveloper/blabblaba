@@ -1,4 +1,4 @@
-
+/*
 #include "ScriptPCH.h"
  
 static const uint32 buffIdstools[] = { 43223, 36880, 48170, 48074, 48162, 48469 };
@@ -100,3 +100,4 @@ void AddSC_npc_symbolixdev()
 {
     new npc_symbolixdev;
 }
+/*

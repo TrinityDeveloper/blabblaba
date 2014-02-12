@@ -5,7 +5,7 @@
 - ScriptName: 'Multi Vendor'
 - Comment: N/A
 <--------------------------------------------------------------------------->
-*/
+
 class starter_gear : public CreatureScript
 {
 public:
@@ -25,7 +25,7 @@ public:
  
        
         bool OnGossipSelect(Player* player, Creature* creature, uint32 /* sender */, uint32 actions)
-		{
+	/*	{
 			player->PlayerTalkClass->ClearMenus();
              WorldSession * PGS = player->GetSession();
 			switch(actions)
@@ -116,3 +116,4 @@ void AddSC_starter_gear()
 {
     new starter_gear;
 }
+*/
