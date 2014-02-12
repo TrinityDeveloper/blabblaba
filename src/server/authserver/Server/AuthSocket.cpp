@@ -222,7 +222,7 @@ void AuthSocket::OnClose(void)
 // Read the packet from the client
 void AuthSocket::OnRead()
 {
-    #define MAX_AUTH_LOGON_CHALLENGES_IN_A_ROW 3
+    #define MAX_AUTH_LOGON_CHALLENGES_IN_A_ROW 3 //Mitigate DoS Attacks to Authserver !
     uint32 challengesInARow = 0;
     uint8 _cmd;
     while (1)
@@ -302,7 +302,7 @@ void AuthSocket::_SetVSFields(const std::string& rI)
     stmt->setString(0, v_hex);
     stmt->setString(1, s_hex);
     stmt->setString(2, _login);
-    LoginDatabase.Execute(stmt);
+    LoginDatabase.DirectExecute(stmt);
 
     OPENSSL_free(v_hex);
     OPENSSL_free(s_hex);
