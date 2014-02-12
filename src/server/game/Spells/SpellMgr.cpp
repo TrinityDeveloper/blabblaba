@@ -197,13 +197,6 @@ DiminishingGroup GetDiminishingReturnsGroupForSpell(SpellInfo const* spellproto,
             if (spellproto->SpellFamilyFlags[2] & 0x4000)
                 return DIMINISHING_NONE;
             break;
-		}
-			case SPELLFAMILY_SHAMAN:
-        {
-             if (spellproto->SpellFamilyFlags[2] & 0x4000)
-                 return DIMINISHING_NONE;
-             break;
-        }
         }
         case SPELLFAMILY_DEATHKNIGHT:
         {
