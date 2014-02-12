@@ -147,25 +147,25 @@ public:
 
 	bool OnGossipHello(Player* player, Creature* creature)
 	{
-		player->ADD_GOSSIP_ITEM(5, "Main-Hand Weapon.", GOSSIP_SENDER_MAIN, 1);
-		player->ADD_GOSSIP_ITEM(5, "Off-Hand Weapon.", GOSSIP_SENDER_MAIN, 2);
-		player->ADD_GOSSIP_ITEM(5, "Two-Handed Weapon.", GOSSIP_SENDER_MAIN, 3);
-		player->ADD_GOSSIP_ITEM(5, "Ranged Weapon.", GOSSIP_SENDER_MAIN, 4);
-		player->ADD_GOSSIP_ITEM(5, "Shield.", GOSSIP_SENDER_MAIN, 5);
-		player->ADD_GOSSIP_ITEM(5, "Head.", GOSSIP_SENDER_MAIN, 6);
-		player->ADD_GOSSIP_ITEM(5, "Shoulders.", GOSSIP_SENDER_MAIN, 7);
-		player->ADD_GOSSIP_ITEM(5, "Cloak.", GOSSIP_SENDER_MAIN, 8);
-		player->ADD_GOSSIP_ITEM(5, "Chest.", GOSSIP_SENDER_MAIN, 9);
-		player->ADD_GOSSIP_ITEM(5, "Bracers.", GOSSIP_SENDER_MAIN, 10);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_SWORD_52:24|t|r Main-Hand Weapon.", GOSSIP_SENDER_MAIN, 1);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_SWORD_52:24|t|r Off-Hand Weapon.", GOSSIP_SENDER_MAIN, 2);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_SWORD_52:24|t|r Two-Handed Weapon.", GOSSIP_SENDER_MAIN, 3);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_SWORD_52:24|t|r Ranged Weapon.", GOSSIP_SENDER_MAIN, 4);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_SWORD_52:24|t|r Shield.", GOSSIP_SENDER_MAIN, 5);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Head.", GOSSIP_SENDER_MAIN, 6);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Shoulders.", GOSSIP_SENDER_MAIN, 7);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Cloak.", GOSSIP_SENDER_MAIN, 8);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Chest.", GOSSIP_SENDER_MAIN, 9);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Bracers.", GOSSIP_SENDER_MAIN, 10);
 		if (player->HasSkill(SKILL_ENGINEERING) && player->GetSkillValue(SKILL_ENGINEERING) == 450)
-			player->ADD_GOSSIP_ITEM(5, "Waist.", GOSSIP_SENDER_MAIN, 12);
-		player->ADD_GOSSIP_ITEM(5, "Gloves.", GOSSIP_SENDER_MAIN, 13);
-		player->ADD_GOSSIP_ITEM(5, "Legs.", GOSSIP_SENDER_MAIN, 14);
-		player->ADD_GOSSIP_ITEM(5, "Feet.", GOSSIP_SENDER_MAIN, 15);
+			player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Waist.", GOSSIP_SENDER_MAIN, 12);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Gloves.", GOSSIP_SENDER_MAIN, 13);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Legs.", GOSSIP_SENDER_MAIN, 14);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Feet.", GOSSIP_SENDER_MAIN, 15);
 		if (player->HasSkill(SKILL_ENCHANTING) && player->GetSkillValue(SKILL_ENCHANTING) == 450)
-			player->ADD_GOSSIP_ITEM(5, "Rings.", GOSSIP_SENDER_MAIN, 16);
-		player->ADD_GOSSIP_ITEM(5, "Eternal Belt Buckle.", GOSSIP_SENDER_MAIN, 17);
-		player->ADD_GOSSIP_ITEM(5, "Titanium Weapon Chain.", GOSSIP_SENDER_MAIN, 18);
+			player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Rings.", GOSSIP_SENDER_MAIN, 16);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Eternal Belt Buckle.", GOSSIP_SENDER_MAIN, 17);
+		player->ADD_GOSSIP_ITEM(5, "|cff00ff00|TInterface\\icons\\INV_CHEST_PLATE_25:24|t|r Titanium Weapon Chain.", GOSSIP_SENDER_MAIN, 18);
 		player->PlayerTalkClass->SendGossipMenu(1, creature->GetGUID());
 		return true;
 	}
