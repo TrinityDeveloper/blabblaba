@@ -1442,7 +1442,7 @@ void AddSC_PvP_System();
 void AddSC_OnUpdate_WorldScript();
 
 void AddSC_Choose_Gear_NPC_CreatureScript();
-void AddSC_Teleporter_NPC_CreatureScript();
+/*void AddSC_Teleporter_NPC_CreatureScript();*/
 void AddSC_Enchanter_NPC_CreatureScript();
 void AddSC_Professions_NPC_CreatureScript();
 
@@ -1452,7 +1452,7 @@ void AddSC_Enchanter_NPC_CreatureScript1();
 void AddSC_CPWS_Transmogrification();
 void AddSC_npc_changer();
 void AddSC_npc_morpher();
-void AddSC_npc_buff();;
+void AddSC_npc_buff();
 void AddSC_npc_1v1arena();
 //void AddSC_npc_symbolixdev();
 //void AddSC_starter_gear();
@@ -1470,7 +1470,7 @@ void AddCustomScripts()
     AddSC_OnUpdate_WorldScript();
 
     AddSC_Choose_Gear_NPC_CreatureScript();
-    AddSC_Teleporter_NPC_CreatureScript();
+ /*AddSC_Teleporter_NPC_CreatureScript();*/
 	AddSC_Enchanter_NPC_CreatureScript();
 	AddSC_Professions_NPC_CreatureScript();
 
