@@ -26513,10 +26513,11 @@ Pet* Player::SummonPet(uint32 entry, float x, float y, float z, float ang, PetTy
 	return pet;
 }
 
-bool IsPremiumOrHigher(Player* player)
+/*bool IsPremiumOrHigher(Player* player)
 {
 	if (player->GetSession()->GetSecurity >= SEC_PREMIUM)
 		return true;
 	else
 		return false;
 }
+*/
