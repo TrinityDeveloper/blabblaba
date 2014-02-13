@@ -1455,6 +1455,8 @@ void AddSC_npc_morpher();
 //void AddSC_npc_buff();
 void AddSC_npc_1v1arena();
 void AddSC_money();
+void AddSC_npc_test();
+void AddSC_Arena_Scripts();
 //void AddSC_bags();
 //void AddSC_npc_symbolixdev();
 //void AddSC_starter_gear();
@@ -1484,6 +1486,8 @@ void AddCustomScripts()
 	//AddSC_npc_buff();
 	AddSC_npc_1v1arena();
 	AddSC_money();
+	AddSC_npc_test();
+	AddSC_Arena_Scripts();
 //	AddSC_bags();
 //	AddSC_npc_symbolixdev();
 //	AddSC_starter_gear();
