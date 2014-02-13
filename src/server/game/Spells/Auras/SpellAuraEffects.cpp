@@ -5405,9 +5405,9 @@ void AuraEffect::HandlePeriodicDummyAuraTick(Unit* target, Unit* caster) const
             // Death and Decay
             if (GetSpellInfo()->SpellFamilyFlags[0] & 0x20)
             {
-                if (caster)
-                    target->CastCustomSpell(target, 52212, &m_amount, NULL, NULL, true, 0, this, caster->GetGUID())
-                break;
+				if (caster)
+					target->CastCustomSpell(target, 52212, &m_amount, NULL, NULL, true, 0, this, caster->GetGUID())
+					break;
             }
             // Blood of the North
             // Reaping

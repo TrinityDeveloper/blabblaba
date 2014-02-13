@@ -15,7 +15,7 @@ public:
 	bool OnGossipSelect(Player* player, Creature* creature, uint32 /*sender*/, uint32 action)
 	{
 		player->PlayerTalkClass->ClearMenus();
-		if (action == GOSSIP_ACTION_INFO_DEF+2)
+		if (action == GOSSIP_ACTION_INFO_DEF+3)
 		{
 			creature->MonsterWhisper("I'm a NPC that you can request item for Transmorgrification NPC max item Level 220  ", player->GetGUID());
 		    player->PlayerTalkClass->SendCloseGossip();
@@ -26,6 +26,7 @@ public:
 
 	{
 		player->PlayerTalkClass->SendCloseGossip();
+		if (action == GOSSIP_ACTION_INFO_DEF + 2)
 		{
 			player->SummonCreature(190010,player->GetPositionX() ,player->GetPositionY()+1, player->GetPositionZ(), 0,TEMPSUMMON_TIMED_DESPAWN,10000);
 			creature->MonsterWhisper("Summoned Transmogrification NPC.", false);

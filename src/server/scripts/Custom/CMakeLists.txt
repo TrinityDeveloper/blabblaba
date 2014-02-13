@@ -32,6 +32,7 @@ set(scripts_STAT_SRCS
   Custom/Change.cpp
   Custom/npc_morpher.cpp
   Custom/transmog.cpp
+  Custom/1v1.cpp
 )
 
 message("  -> Prepared: Custom")
