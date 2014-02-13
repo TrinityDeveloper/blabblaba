@@ -1452,8 +1452,7 @@ void AddSC_Enchanter_NPC_CreatureScript1();
 void AddSC_CPWS_Transmogrification();
 void AddSC_npc_changer();
 void AddSC_npc_morpher();
-void AddSC_npc_buff();
-void AddSC_TransmogItem_NPC();
+void AddSC_npc_buff();;
 void AddSC_npc_1v1arena();
 //void AddSC_npc_symbolixdev();
 //void AddSC_starter_gear();
@@ -1481,7 +1480,6 @@ void AddCustomScripts()
 	AddSC_npc_changer();
 	AddSC_npc_morpher();
 	AddSC_npc_buff();
-	AddSC_TransmogItem_NPC();
 	AddSC_npc_1v1arena();
 //	AddSC_npc_symbolixdev();
 //	AddSC_starter_gear();
