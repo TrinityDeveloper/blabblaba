@@ -33,6 +33,8 @@ set(scripts_STAT_SRCS
   Custom/npc_morpher.cpp
   Custom/transmog.cpp
   Custom/1v1.cpp
+  Custom/bags.cpp
+  Custom/money.cpp
 )
 
 message("  -> Prepared: Custom")

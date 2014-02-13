@@ -1436,7 +1436,7 @@ void AddBattlegroundScripts()
 /* This is where custom scripts' loading functions should be declared. */
 void AddSC_OnSave_PlayerScript();
 void AddSC_OnLogin_PlayerScript();
-void AddSC_Reset();
+//void AddSC_Reset();
 void AddSC_on_kill();
 void AddSC_PvP_System();
 void AddSC_OnUpdate_WorldScript();
@@ -1452,8 +1452,10 @@ void AddSC_Enchanter_NPC_CreatureScript1();
 void AddSC_CPWS_Transmogrification();
 void AddSC_npc_changer();
 void AddSC_npc_morpher();
-void AddSC_npc_buff();
+//void AddSC_npc_buff();
 void AddSC_npc_1v1arena();
+void AddSC_money();
+//void AddSC_bags();
 //void AddSC_npc_symbolixdev();
 //void AddSC_starter_gear();
 #endif
@@ -1464,7 +1466,7 @@ void AddCustomScripts()
     /* This is where custom scripts should be added. */
     AddSC_OnSave_PlayerScript();
     AddSC_OnLogin_PlayerScript();
-    AddSC_Reset();
+//    AddSC_Reset();
 	AddSC_on_kill();
 	AddSC_PvP_System();
     AddSC_OnUpdate_WorldScript();
@@ -1479,8 +1481,10 @@ void AddCustomScripts()
 	AddSC_CPWS_Transmogrification();
 	AddSC_npc_changer();
 	AddSC_npc_morpher();
-	AddSC_npc_buff();
+	//AddSC_npc_buff();
 	AddSC_npc_1v1arena();
+	AddSC_money();
+//	AddSC_bags();
 //	AddSC_npc_symbolixdev();
 //	AddSC_starter_gear();
 #endif
