@@ -1,0 +1,16 @@
+1. Fixed Resiliance.
+2. Fixed PRiest Shadowfiend.
+3. Implement Crowd Control Delay.
+4. Fix Warlock Succubus Talent.
+5. Fix Warlock again Succubus.
+6. Fix Warrior Bladestorm aura on disarms.
+7. Fixed Death Knight Anti-Magic Shell's Immunities.
+8. Fix Warlock Felhunter Spell Lock.
+9. Implemented Instant CastTime before start arena.
+10. Implemented Transmogrification.
+11. Fix Rogue Glyph of Envenom.
+12. Fix Warrior Retaliation.
+13. Fixed Invisible wall in mmaps.
+14. Implemented Authserver DoS.
+15. Implement AntiFlood AuthServer again.
+16. Implement 1v1 Rated Arena.
