@@ -3744,7 +3744,7 @@ void SpellMgr::LoadSpellInfoCorrections()
                 spellInfo->Attributes |= SPELL_ATTR0_DONT_AFFECT_SHEATH_STATE;
                 spellInfo->Attributes |= SPELL_ATTR0_CASTABLE_WHILE_SITTING;
                 break;
-            case 52212: // Death and Decay.
+/*            case 52212: // Death and Decay.
                 spellInfo->AttributesEx6 |= SPELL_ATTR6_CAN_TARGET_INVISIBLE;
                 spellInfo->AttributesEx5 |= SPELL_ATTR5_START_PERIODIC_AT_APPLY;
                 spellInfo->AttributesEx3 |= SPELL_ATTR3_UNK25;
@@ -3761,6 +3761,7 @@ void SpellMgr::LoadSpellInfoCorrections()
                 spellInfo->Attributes |= SPELL_ATTR0_DONT_AFFECT_SHEATH_STATE;
                 spellInfo->Speed = 80;
                 break;
+				*/
             case 68645: // Goblin Rocket Pack.
                 spellInfo->AttributesEx6 |= SPELL_ATTR6_DONT_DISPLAY_COOLDOWN;
                 spellInfo->AttributesEx5 |= SPELL_ATTR5_UNK21;
