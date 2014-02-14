@@ -1443,7 +1443,7 @@ void AddSC_OnUpdate_WorldScript();
 
 void AddSC_Choose_Gear_NPC_CreatureScript();
 /*void AddSC_Teleporter_NPC_CreatureScript();*/
-void AddSC_Enchanter_NPC_CreatureScript();
+void AddSC_npc_enchantment();
 void AddSC_Professions_NPC_CreatureScript();
 
 
@@ -1475,7 +1475,7 @@ void AddCustomScripts()
 
     AddSC_Choose_Gear_NPC_CreatureScript();
  /*AddSC_Teleporter_NPC_CreatureScript();*/
-	AddSC_Enchanter_NPC_CreatureScript();
+	AddSC_npc_enchantment()
 	AddSC_Professions_NPC_CreatureScript();
 
     AddSC_Enchanter_NPC_CreatureScript1();
